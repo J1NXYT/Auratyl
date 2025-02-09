@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earning Page</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="ads.js"></script>
+</head>
+
+<body class="bg-black h-screen w-screen bg-cover bg-center  bg-fixed overflow-hidden">
+   <!--Navbar start-->
+<nav class="bg-purple-950 bg-opacity-75 sm:bg-opacity-75 md:bg-opacity-100 lg:bg-opacity-100">
+    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+      <div class="relative flex h-16 items-center justify-between">
+        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+          <!-- Mobile menu button -->
+          <button
+            type="button"
+            class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+            aria-controls="mobile-menu"
+            aria-expanded="false"
+          >
+            <span
+              class="absolute -inset-0.5"
+              onclick="document.getElementById('mobile-menu').classList.toggle('hidden')"
+            ></span>
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="block size-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              aria-hidden="true"
+              data-slot="icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+            <svg
+              class="hidden size-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              aria-hidden="true"
+              data-slot="icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18 18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+          <div class="flex shrink-0 items-center"></div>
+          <div class="hidden sm:ml-6 sm:block">
+            <div class="flex space-x-4">
+              <a
+                href="/dash"
+                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                aria-current="page"
+                >Dashboard</a
+              >
+              <a
+                href="/servers"
+                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                >Servers</a
+              >
+              <a
+                href="/account"
+                class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-700 hover:text-white"
+                >Account</a
+              >
+              <a
+                href="/createserver"
+                class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-700 hover:text-white"
+                >Create</a
+              >
+              <a
+                href="/earn"
+                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                >Earn</a
+              >
+              <a
+                href="/shop"
+                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                >Shop</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+          <button
+            type="button"
+            class="relative rounded-full bg-black p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+          >
+            <span class="absolute -inset-1.5"></span>
+            <span class="sr-only">View notifications</span>
+            <svg
+              class="size-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              aria-hidden="true"
+              data-slot="icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      class="sm:hidden animate__animated animate__slideInDown hidden"
+      id="mobile-menu"
+    >
+      <div class="space-y-1 px-2 pb-3 pt-2">
+        <a
+          href="/dash"
+          class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+          aria-current="page"
+          >Dashboard</a
+        >
+        <a
+          href="/account"
+          class="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-gray-700 hover:text-white"
+          >Account</a
+        >
+        <a
+          href="/createserver"
+          class="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-gray-700 hover:text-white"
+          >Create</a
+        >
+        <a
+          href="/servers"
+          class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+          >Servers</a
+        >
+        <a
+          href="/earn"
+          class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+          >Earn</a
+        >
+        <a
+          href="/shop"
+          class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+          >Shop</a
+        >
+      </div>
+    </div>
+  </nav>
+  <!--Navbar End-->
+  
+
+<!-- Earning Page Start -->
+<div class="flex items-center justify-center min-h-screen">
+  <div class="bg-white bg-opacity-10 p-6 rounded-lg shadow-lg w-full max-w-md">
+      <h2 class="text-2xl font-bold text-center mb-6 text-white">Earning Page</h2>
+      <div class="mb-4">
+          <p class="text-white text-center text-xl mb-4">Earn coins by staying active!</p>
+          <p class="text-gray-200 text-center text-lg">Next coin request in: <span id="countdown" class="font-bold">60</span> seconds</p>
+          <p class="text-gray-200 text-center text-lg">Your coins: <span id="coin-count" class="font-bold">0</span></p>
+      </div>
+      <div class="text-center">
+          <button id="get-coin" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-700 focus:outline-none hidden">Request Coins</button>
+          <p class="text-white text-center text-lg mt-6">Wanna earn more? Check out Linkvertise!</p>
+          <a onclick="linkvertise()" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-700 focus:outline-none mt-2 inline-block">Visit Linkvertise</a>
+      </div>
+  </div>
+</div>
+<!-- Earning Page End -->
+
+   
+    <script>
+        let countdown = 60;
+        const countdownElement = document.getElementById('countdown');
+        const getCoinButton = document.getElementById('get-coin');
+        const coinCountElement = document.getElementById('coin-count');
+        var userid;
+        var dashUrl
+        function getLinkvertise(){
+          fetch('/info')
+                .then(response => response.json())
+                .then(data => {
+                    if (data.linkId !== undefined && data.linkId !== undefined) {
+                      userid = data.linkId;
+                      dashUrl = data.dashboard;
+                      console.log(userid,dashUrl);
+                    } else {
+                        console.error('Invalid response:', data);
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching coins:', error);
+                });
+        }
+function linkvertise(){
+  const url = `https://link-to.net/${userid}/${Math.random()*1000}/dynamic?r=${btoa(encodeURI(dashUrl+"/linkvertise"))}`;
+  window.open(url, '_blank');
+}
+
+        function fetchCoins() {
+            fetch('/coins')
+                .then(response => response.json())
+                .then(data => {
+                    if (data.coins !== undefined) {
+                        coinCountElement.innerText = data.coins; 
+                    } else {
+                        console.error('Invalid response:', data);
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching coins:', error);
+                });
+        }
+
+        function startAFKSystem() {
+            setInterval(function () {
+                if (countdown > 0) {
+                    countdown--;
+                    countdownElement.innerText = countdown;
+                } else {
+                    getCoinButton.classList.remove('hidden');
+                    countdown = 60;
+                    countdownElement.innerText = countdown;
+                }
+            }, 1000);
+        }
+        function changeButtonPosition() {
+            const randomX = Math.floor(Math.random() * 80) + 10; 
+            const randomY = Math.floor(Math.random() * 80) + 10;
+            getCoinButton.style.position = 'absolute';
+            getCoinButton.style.left = `${randomX}%`;
+            getCoinButton.style.top = `${randomY}%`;
+        }
+
+        function _0x41d6(){var _0x104b0a=['228834DKBheK','10eBMKSS','583617eFBJtW','then','506VUlCWl','1284080okmCYD','1975797HPQrHs','json','/getcoins','370ZfuWdZ','16eeiIFk','942200zawpnR','8748CdhddC','success','Coins\x20successfully\x20added!','10734OPVlgi','catch','An\x20error\x20occurred\x20while\x20requesting\x20coins.','Error:','error','4onVHON'];_0x41d6=function(){return _0x104b0a;};return _0x41d6();}(function(_0x1bbd45,_0x1fad7e){var _0x19c357=_0x94e4,_0x12481d=_0x1bbd45();while(!![]){try{var _0x1f361c=-parseInt(_0x19c357(0x19b))/0x1+-parseInt(_0x19c357(0x19a))/0x2*(-parseInt(_0x19c357(0x19d))/0x3)+-parseInt(_0x19c357(0x18b))/0x4+-parseInt(_0x19c357(0x18f))/0x5*(parseInt(_0x19c357(0x195))/0x6)+parseInt(_0x19c357(0x191))/0x7*(parseInt(_0x19c357(0x190))/0x8)+-parseInt(_0x19c357(0x18c))/0x9*(-parseInt(_0x19c357(0x19c))/0xa)+-parseInt(_0x19c357(0x19f))/0xb*(-parseInt(_0x19c357(0x192))/0xc);if(_0x1f361c===_0x1fad7e)break;else _0x12481d['push'](_0x12481d['shift']());}catch(_0x5cc8ad){_0x12481d['push'](_0x12481d['shift']());}}}(_0x41d6,0x37ef1));function _0x94e4(_0x25ef4e,_0x7574c7){var _0x41d65d=_0x41d6();return _0x94e4=function(_0x94e4d4,_0x4d3f57){_0x94e4d4=_0x94e4d4-0x18b;var _0x368bd5=_0x41d65d[_0x94e4d4];return _0x368bd5;},_0x94e4(_0x25ef4e,_0x7574c7);}function requestCoin(){var _0x4213b2=_0x94e4;fetch(_0x4213b2(0x18e))[_0x4213b2(0x19e)](_0x4aefab=>_0x4aefab[_0x4213b2(0x18d)]())[_0x4213b2(0x19e)](_0x48ac2b=>{var _0x13e2c7=_0x4213b2;_0x48ac2b[_0x13e2c7(0x193)]?(alert(_0x13e2c7(0x194)),fetchCoins()):fetchCoins();})[_0x4213b2(0x196)](_0x2c2296=>{var _0x3267b9=_0x4213b2;console[_0x3267b9(0x199)](_0x3267b9(0x198),_0x2c2296),alert(_0x3267b9(0x197));});}
+
+        // Initialize page by fetching coins
+        fetchCoins();
+        getLinkvertise()
+        setInterval(changeButtonPosition, 60000);
+        startAFKSystem();
+
+        getCoinButton.addEventListener('click', function () {
+            getCoinButton.classList.add('hidden');
+            requestCoin();
+        });
+    </script>
+</body>
+
+</html>
