@@ -1,4 +1,4 @@
-# Ultratyl updated ui
+# Ultratyl updated UI
 ## Authors
 
 - [@RkcBusterz](https://github.com/RkcBusterz) - Current Dashboard Maintainer and founder.
