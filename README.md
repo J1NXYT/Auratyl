@@ -1,11 +1,11 @@
-# Ultratyl updated UI
+# Auratyl updated UI
 ## Authors
 
-- [@RkcBusterz](https://github.com/RkcBusterz) - Current Dashboard Maintainer and founder.
+- [@J1NXYT](https://github.com/J1NXYT) - Current Dashboard Maintainer and founder.
 
 ## Description
 
-> Ultratyl is on development phase, its a pterodactyl dashboard which runs with Express JS.
+> Auratyl is on development phase, its a pterodactyl dashboard which runs with Express JS.
 >
 > **Key features**
 > - It has discord Authorization feature
@@ -33,7 +33,7 @@ cd /var/www/
 **Then clone the git repo by the following command**
 
 ```
-git clone https://github.com/J1NXYT/ultratyl ultratyl
+git clone https://github.com/J1NXYT/auratyl auratyl
 ```
 
 **Use sftp client or nano and edit the settings.json**
