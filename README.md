@@ -33,7 +33,7 @@ cd /var/www/
 **Then clone the git repo by the following command**
 
 ```
-git clone https://github.com/RkcBusterz/ultratyl ultratyl
+git clone https://github.com/J1NXYT/ultratyl ultratyl
 ```
 
 **Use sftp client or nano and edit the settings.json**
